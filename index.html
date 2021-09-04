@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+    <form class="search-box">
+        <i class="fas fa-search fa-lg"></i>
+        <input class="url-space" type="text"/>
+    </form>
+
+    <div class="middle-part">
+        <h2 class="today-day">d</h2>
+        <h2 id="clock">00:00:00</h2>   
+        
+
+        <form id="login-form">
+            <input 
+            class="nameSpace"
+            required
+            maxlength="15"
+            type="text"
+             placeholder="What is your name?"/>
+             <input class = loginBtn type="submit" value="Log In" />
+        </form>
+        
+        <h1 id="greeting" class="hidden"></h1>
+    
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required/>
+        </form>
+        
+        <ul id="todo-list">
+        </ul>
+    
+        <div id="quote">
+            <span class = "line"></span>
+            <span class = "speaker"></span>
+        </div>
+    </div>
+   
+
+    <div id = "weather">
+        <div>
+            <span class="city-name"></span>
+        </div>
+       <div>
+             <span class="city-weather"></span>
+       </div>
+       <div>
+           <span class="city-temperature"></span>
+       </div>
+    </div>
+    
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/link.js"></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>
